@@ -18,6 +18,8 @@ public class ContactsServiceImlp implements ContactsService {
 	
     public ContactsServiceImlp(@Autowired ContactsRepository contactsRepository) {
         this.contactsRepository = contactsRepository;
+        addContacts(new Contacts(1l,"rhythm","sehgal","rhythmsehgal9@gmail.com","88128"));
+        addContacts(new Contacts(2l,"rohit","sharma","rohit@gmail.com","43254"));
     }
     
     @Override
